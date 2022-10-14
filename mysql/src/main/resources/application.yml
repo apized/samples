@@ -1,0 +1,52 @@
+micronaut:
+  application:
+    name: Apized Sample Server
+
+  server:
+    port: ${PORT:8080}
+
+endpoints:
+  all:
+    port: ${MANAGEMENT_PORT:8081}
+  health:
+    details-visible: ANONYMOUS
+    enabled: true
+    sensitive: false
+  info:
+    enabled: false
+  routes:
+    enabled: true
+    sensitive: false
+  threaddump:
+    enabled: false
+  flyway:
+    enabled: false
+  beans:
+    enabled: false
+  refresh:
+    enabled: false
+
+flyway:
+  datasources:
+    default:
+      enabled: true
+
+netty:
+  default:
+    allocator:
+      max-order: 3
+
+datasources:
+  default:
+    url: jdbc:mysql://${DB_HOST:localhost}:${DB_PORT:3306}/${DB_NAME:sample}
+    username: ${DB_USER:root}
+    password: ${DB_PASS:mysql}
+
+apized:
+  slug: server
+  federation:
+    catalogopolis: https://api.catalogopolis.xyz/v1
+
+logger:
+  levels:
+    io.micronaut.data.query: DEBUG

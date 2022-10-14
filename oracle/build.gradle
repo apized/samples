@@ -1,0 +1,9 @@
+plugins {
+  id 'org.apized.micronaut' version "$apizedVersion"
+}
+
+dependencies {}
+
+application {
+  mainClass.set("org.apized.sample.oracle.Application")
+}

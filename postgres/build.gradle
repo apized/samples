@@ -1,0 +1,7 @@
+plugins {
+  id 'org.apized.micronaut' version "$apizedVersion"
+}
+
+application {
+  mainClass.set("org.apized.sample.postgres.Application")
+}

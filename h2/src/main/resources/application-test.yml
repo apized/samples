@@ -1,0 +1,8 @@
+micronaut:
+  server:
+    port: 0
+
+endpoints:
+  all:
+    port: 0
+    enabled: false

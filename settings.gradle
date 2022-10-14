@@ -1,0 +1,9 @@
+pluginManagement {
+  repositories {
+    mavenLocal()
+    gradlePluginPortal()
+  }
+}
+rootProject.name = 'apized_samples'
+include 'h2', 'mysql', 'postgres', 'sqlserver', 'oracle', 'ansi'
+
