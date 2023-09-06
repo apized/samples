@@ -21,6 +21,7 @@ import io.micronaut.serde.annotation.Serdeable;
 import jakarta.persistence.Entity;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.OneToMany;
+import jakarta.validation.constraints.NotNull;
 import lombok.Getter;
 import lombok.Setter;
 import org.apized.core.model.ApiContext;
@@ -29,7 +30,6 @@ import org.apized.core.model.BaseModel;
 import org.apized.sample.ansi.api.employee.Employee;
 import org.apized.sample.ansi.api.organization.Organization;
 
-import javax.validation.constraints.NotNull;
 import java.util.List;
 
 @Getter

@@ -20,6 +20,8 @@ import io.micronaut.serde.annotation.Serdeable;
 import jakarta.persistence.Entity;
 import jakarta.persistence.OneToMany;
 import jakarta.persistence.OneToOne;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
 import lombok.Getter;
 import lombok.Setter;
 import org.apized.core.model.Apized;
@@ -27,8 +29,6 @@ import org.apized.core.model.BaseModel;
 import org.apized.sample.ansi.api.department.Department;
 import org.apized.sample.ansi.api.employee.Employee;
 
-import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.NotNull;
 import java.util.List;
 
 @Getter

@@ -16,11 +16,9 @@
 
 package org.apized.samples.postgres.integration.apized
 
-
 import io.micronaut.http.annotation.Controller
+import jakarta.transaction.Transactional
 import org.apized.micronaut.test.integration.MicronautTestController
-
-import javax.transaction.Transactional
 
 @Controller('/integration')
 @Transactional

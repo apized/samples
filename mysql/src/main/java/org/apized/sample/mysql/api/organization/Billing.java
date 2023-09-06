@@ -21,6 +21,8 @@ import io.micronaut.serde.annotation.Serdeable;
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
 import jakarta.persistence.OneToOne;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
@@ -28,9 +30,6 @@ import org.apized.core.model.Apized;
 import org.apized.core.model.BaseModel;
 import org.apized.core.model.Layer;
 import org.apized.sample.mysql.api.address.Address;
-
-import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.NotNull;
 
 @Getter
 @Setter

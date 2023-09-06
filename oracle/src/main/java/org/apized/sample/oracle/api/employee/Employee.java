@@ -23,6 +23,7 @@ import io.micronaut.serde.annotation.Serdeable;
 import jakarta.persistence.Entity;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.OneToOne;
+import jakarta.validation.constraints.NotNull;
 import lombok.Getter;
 import lombok.Setter;
 import org.apized.core.federation.Federation;
@@ -31,8 +32,6 @@ import org.apized.core.model.BaseModel;
 import org.apized.sample.oracle.api.address.Address;
 import org.apized.sample.oracle.api.department.Department;
 import org.apized.sample.oracle.api.organization.Organization;
-
-import javax.validation.constraints.NotNull;
 
 @Getter
 @Setter
